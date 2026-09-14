@@ -1,4 +1,4 @@
-← [jai-framework](../../README.md)
+← [jorgo-ai-framework](../../README.md)
 
 # jai-refine
 
@@ -6,7 +6,7 @@ Meta-cognition plugin for the AI-Driven Development framework.
 
 > Status: stable.
 
-First time? Install with `/plugin install jai-refine@jai-framework`, then run `jai-refine:01-brainstorm`.
+First time? Install with `/plugin install jai-refine@jorgo-ai-framework`, then run `jai-refine:01-brainstorm`.
 
 Four skills that refine inputs and outputs through reflection: clarify vague requests, challenge prior work for correctness, analytically scan artifacts for blind spots, and verify factual claims against authoritative sources.
 

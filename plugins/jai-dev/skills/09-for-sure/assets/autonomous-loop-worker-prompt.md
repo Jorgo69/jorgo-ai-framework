@@ -7,6 +7,10 @@ buttons). Do not ask for permission. Just do it.
 Signing in via an existing account (Google Sign-in, GitHub OAuth, SSO) is NOT
 account creation; it uses the user's active browser session. Do it.
 
+Stage completed work with `git add` as you go. Never run `git commit` or `git
+push` — the loop commits everything once, interactively, after the success
+condition passes.
+
 Stop and report instead, without proceeding, when an action would cost money (a
 payment, subscription, or paid upgrade) or is destructive (deletes data, drops a
 database, force-pushes, resets git history, removes files recursively, or

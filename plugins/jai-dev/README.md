@@ -1,4 +1,4 @@
-← [jai-framework](../../README.md)
+← [jorgo-ai-framework](../../README.md)
 
 # jai-dev
 
@@ -6,7 +6,7 @@ Code transformation plugin for the AI-Driven Development framework.
 
 > Status: stable.
 
-First time? Install with `/plugin install jai-dev@jai-framework`, then run `jai-dev:01-plan`.
+First time? Install with `/plugin install jai-dev@jorgo-ai-framework`, then run `jai-dev:01-plan`.
 
 Covers code transformation: planning, implementation, assertions, audits, code review, testing, refactoring, debugging, for-sure, and parallel todo fan-out. Standalone Browser QA records short web evidence. Also hosts AI agents.
 

@@ -1,4 +1,4 @@
-← [jai-framework](../../README.md)
+← [jorgo-ai-framework](../../README.md)
 
 # jai-pm
 
@@ -6,7 +6,7 @@ Product management plugin for the AI-Driven Development framework.
 
 > Status: stable.
 
-First time? Install with `/plugin install jai-pm@jai-framework`, then invoke the artifact skill you need.
+First time? Install with `/plugin install jai-pm@jorgo-ai-framework`, then invoke the artifact skill you need.
 
 Covers backlog artifacts, refinement, lifecycle, Product Briefs, Epics, User Stories, Tasks, Spikes, Defects, requirements, and specs.
 

@@ -1,4 +1,4 @@
-← [jai-framework](../../README.md)
+← [jorgo-ai-framework](../../README.md)
 
 # jai-vcs
 
@@ -6,7 +6,7 @@ VCS workflow plugin for the AI-Driven Development framework.
 
 > Status: stable.
 
-First time? Install with `/plugin install jai-vcs@jai-framework`, then run `jai-vcs:01-commit`.
+First time? Install with `/plugin install jai-vcs@jorgo-ai-framework`, then run `jai-vcs:01-commit`.
 
 Typical flow: `00-repo-init` once to set up the repo; `01-commit` after each unit of work; `02-pull-request` when the branch is ready; `03-release-tag` at release time; `04-issue-create` from anywhere.
 

@@ -1,4 +1,4 @@
-← [jai-framework](../../README.md)
+← [jorgo-ai-framework](../../README.md)
 
 # jai-orchestrator
 
@@ -6,7 +6,7 @@ Orchestration plugin for the AI-Driven Development framework.
 
 > Status: stable for synchronous SDLC, `async-dev`, and backlog orchestration.
 
-First time? Install with `/plugin install jai-orchestrator@jai-framework`, then run `jai-orchestrator:01-sdlc`. For async automation, run `jai-orchestrator:00-async-dev` with `action=setup`. New to the framework? See the [quick start](../../README.md#-quick-start).
+First time? Install with `/plugin install jai-orchestrator@jorgo-ai-framework`, then run `jai-orchestrator:01-sdlc`. For async automation, run `jai-orchestrator:00-async-dev` with `action=setup`. New to the framework? See the [quick start](../../README.md#-quick-start).
 
 Composes capabilities into deterministic, auditable flows. Domain skills retain their own validation.
 

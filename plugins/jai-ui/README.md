@@ -1,4 +1,4 @@
-← [jai-framework](../../README.md)
+← [jorgo-ai-framework](../../README.md)
 
 # jai-ui 🚧 alpha
 
@@ -14,7 +14,7 @@ This plugin is in alpha (`0.1.0-alpha.0`). It lives on a dedicated branch off `n
 claude --plugin-dir plugins/jai-ui          # zero-marketplace, session-scoped
 # or, persistent:
 /plugin marketplace add .                      # register this checkout as a local marketplace
-/plugin install jai-ui@jai-framework
+/plugin install jai-ui@jorgo-ai-framework
 ```
 
 Then run `jai-ui:01-hello` to confirm it loads.

@@ -12,8 +12,8 @@ Installs the orchestrator plugin and an SDLC-providing plugin at user scope so t
   "skipped": true,
   "skip_reason": "already-project-scope",
   "found_at": [
-    { "plugin": "jai-orchestrator", "scope": "project", "marketplace": "jai-framework-local" },
-    { "plugin": "jai-dev",          "scope": "project", "marketplace": "jai-framework-local" }
+    { "plugin": "jai-orchestrator", "scope": "project", "marketplace": "jorgo-ai-framework-local" },
+    { "plugin": "jai-dev",          "scope": "project", "marketplace": "jorgo-ai-framework-local" }
   ]
 }
 ```
@@ -45,7 +45,7 @@ The action MUST detect already-loaded plugins **before** prompting the user abou
 
 ## Test
 
-**Project-scope path.** Given a repo with `.claude/settings.json` containing `"jai-orchestrator@jai-framework-local": true` and `"jai-dev@jai-framework-local": true`: action returns `skipped: true`, `skip_reason: "already-project-scope"`, prints exactly one confirmation line, and **does not prompt the user**. `claude plugin list` is unchanged before and after.
+**Project-scope path.** Given a repo with `.claude/settings.json` containing `"jai-orchestrator@jorgo-ai-framework-local": true` and `"jai-dev@jorgo-ai-framework-local": true`: action returns `skipped: true`, `skip_reason: "already-project-scope"`, prints exactly one confirmation line, and **does not prompt the user**. `claude plugin list` is unchanged before and after.
 
 **User-scope path.** Given a fresh repo with no project plugins but `claude plugin list` already showing both plugins user-scope: same shape with `skip_reason: "already-user-scope"`. No prompt.
 

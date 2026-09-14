@@ -2,7 +2,7 @@
 
 ## Behavior
 
-Present the plan to the user and wait for explicit approval before handing it to an executor. Once approved, give the executor the plan. The executor implements it and calls the validation skills, which own their checks and repair loops. Include architecture conformance whenever the project documents architecture. Run a required end-to-end journey after every other validation.
+Present the plan to the user and wait for explicit approval before handing it to an executor. Once approved, give the executor the plan. The executor implements it and calls the validation skills, which own their checks and repair loops. When the project documents architecture, request the `assert-architecture` facet from Assert: it only reports, never fixes, so treat any violation it lists as a repair sent back to the executor, not a suggestion to weigh. Run a required end-to-end journey after every other validation.
 
 Call the commit skill in `interactive` mode, never `auto`: it stages the change, drafts the conventional message, and pauses for the user's explicit approval before committing or pushing. Only send the approved, committed candidate to Check.
 
@@ -23,7 +23,7 @@ flowchart TD
     direction TB
     Executor(["@jai-dev:executor"])
     Implement["/jai-dev:02-implement"]
-    Assert["/jai-dev:03-assert"]
+    Assert["/jai-dev:03-assert (+ assert-architecture when documented)"]
     Test["/jai-dev:06-test"]
     Commit["/jai-vcs:01-commit interactive"]
     CommitApproval{{"User approves diff + message?"}}
@@ -42,8 +42,9 @@ flowchart TD
   PlanApproval -- "Yes" --> Executor
   Executor --> Implement
   Implement --> Assert
-  Assert -- "When no end-to-end journey is required, stage the commit." --> Commit
-  Assert -- "When an end-to-end journey is required, run it last." --> Test
+  Assert -- "Violation found: send back to the executor." --> Executor
+  Assert -- "Clean, no end-to-end journey required: stage the commit." --> Commit
+  Assert -- "Clean, end-to-end journey required: run it last." --> Test
   Test -- "After the journey succeeds, stage the commit." --> Commit
   Test -- "Return a failed journey for repair." --> Executor
   Commit --> CommitApproval

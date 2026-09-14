@@ -8,7 +8,7 @@ The tracking file `aidd_docs/tasks/<task-name>.md` produced by `01-init-tracking
 
 ## Output
 
-The success condition verified and the plan's `status` set to `implemented`, with every step checked and one Log entry per attempt.
+The success condition verified and the plan's `status` set to `implemented`, with every step checked, one Log entry per attempt, and the accumulated work handed to the user through one interactive commit.
 
 ## Process
 
@@ -20,10 +20,12 @@ The success condition verified and the plan's `status` set to `implemented`, wit
 6. **Verify.** Read the worker's result, then verify concretely by running a check command, reading a file, or testing the output. Never trust the worker's claim alone.
 7. **Record.** Read the worker's outcome. When it stopped at a money or destructive gate, surface the reason to the user and stop the loop; never retry, which would re-trigger the action. On verified success, tick the step `[x]`. On a plain failure, spawn another worker with the error context. Append a Log entry per [autonomous-loop-log-format.md](../references/autonomous-loop-log-format.md).
 8. **Loop.** Move to the next unchecked step and repeat from Read.
-9. **Evaluate.** Once every step is checked, run the `success_condition` command and verify the result yourself. On success, set `status: implemented` and stop. On failure, add new steps addressing the root cause and continue the loop.
+9. **Evaluate.** Once every step is checked, run the `success_condition` command and verify the result yourself. On failure, add new steps addressing the root cause and continue the loop. On success, set `status: implemented`.
+10. **Hand off.** Call `/jai-vcs:01-commit interactive` once for the whole accumulated diff across every step. Pause for the user's explicit approval of the message and diff before it commits or pushes; the loop's own autonomy ends here.
 
 ## Test
 
 - Each step attempt has exactly one Log entry.
 - Every checked step has a `= ✓` entry whose verification cites a concrete command or file.
 - `status: implemented` is set only after the `success_condition` command has been re-run and exits zero.
+- The loop never calls `git commit` or `git push` itself; the only commit is the single interactive one at the end, and it waits for approval.

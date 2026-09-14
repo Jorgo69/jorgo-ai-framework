@@ -25,6 +25,7 @@ Before running an action, read its file in `actions/`, not only the table or ass
 - No repeated failures: never retry a failed approach without a meaningful change.
 - Honesty over escape: never set `status: implemented` until the success condition genuinely passes.
 - Auto-accept: when a decision or approval is needed, act as the user (create accounts, generate keys, approve prompts, install tools), never asking. Stop only on a payment or a destructive action.
+- Git stays out of auto-accept: stage work as it completes, never commit or push mid-loop. The loop ends with exactly one interactive commit, approved by the user, covering everything it did.
 - The loop spawns one worker agent per step and never does the work itself.
 
 ## Assets

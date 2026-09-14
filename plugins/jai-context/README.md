@@ -1,4 +1,4 @@
-← [jai-framework](../../README.md)
+← [jorgo-ai-framework](../../README.md)
 
 # jai-context
 
@@ -6,7 +6,7 @@ Knowledge production plugin for the AI-Driven Development framework.
 
 > Status: stable.
 
-First time? Install with `/plugin install jai-context@jai-framework`, then run `jai-context:00-onboard`.
+First time? Install with `/plugin install jai-context@jorgo-ai-framework`, then run `jai-context:00-onboard`.
 
 Covers project bootstrap, the project memory bank, generation of context artifacts (skills, agents, rules, commands, hooks), Mermaid diagrams, learning, project exploration, recipes, and a plain-language onboarding guide.
 
