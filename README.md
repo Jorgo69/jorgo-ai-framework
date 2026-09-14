@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="docs/assets/logo.png" alt="Jorgo AI Framework" width="100" />
-
 # Jorgo AI Framework
 
 ## Personal SDLC toolkit for AI-assisted software development.
