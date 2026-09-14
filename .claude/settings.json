@@ -13,15 +13,15 @@
     ]
   },
   "enabledPlugins": {
-    "aidd-context@aidd-framework": true,
-    "aidd-dev@aidd-framework": true,
-    "aidd-vcs@aidd-framework": true,
-    "aidd-pm@aidd-framework": true,
-    "aidd-orchestrator@aidd-framework": true,
-    "aidd-refine@aidd-framework": true
+    "jai-context@jorgo-ai-framework": true,
+    "jai-dev@jorgo-ai-framework": true,
+    "jai-vcs@jorgo-ai-framework": true,
+    "jai-pm@jorgo-ai-framework": true,
+    "jai-orchestrator@jorgo-ai-framework": true,
+    "jai-refine@jorgo-ai-framework": true
   },
   "extraKnownMarketplaces": {
-    "aidd-framework": {
+    "jorgo-ai-framework": {
       "source": {
         "source": "directory",
         "path": "."

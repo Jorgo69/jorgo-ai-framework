@@ -29,7 +29,7 @@ What holds for every contribution, whatever you're building:
 - **No slop** — read every line before proposing it.
 - **Spend tokens like they cost something.**
 - **Claude Code syntax only** — skills, agents, and rules are authored in Claude Code syntax (the [CLI](./cli/) adapts a per-tool archive at release).
-- **Follow the skill structure** → [`ARCHITECTURE.md`](docs/ARCHITECTURE.md), use the `/aidd-context:04-skill-generate`.
+- **Follow the skill structure** → [`ARCHITECTURE.md`](docs/ARCHITECTURE.md), use the `/jai-context:04-skill-generate`.
 - **Evolve the memory** → [`aidd_docs/memory/`](aidd_docs/memory/).
 
 ## 🔧 Set up

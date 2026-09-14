@@ -1,14 +1,16 @@
 <div align="center">
 
-<img src="docs/assets/logo.png" alt="AIDD" width="100" />
+<img src="docs/assets/logo.png" alt="Jorgo AI Framework" width="100" />
 
-# AI-Driven Dev Framework
+# Jorgo AI Framework
 
-## Enterprise-grade SDLC for high-quality software development.
+## Personal SDLC toolkit for AI-assisted software development.
 
-Unify **engineering teams** around **standardized workflows** and **shared best practices**, across modern stacks and **legacy systems**, while reducing **technical debt**.
+> Personal fork of [ai-driven-dev/framework](https://github.com/ai-driven-dev/framework) (MIT), adapted and maintained by [Jorgo69](https://github.com/Jorgo69).
 
-🧱 **IDE agnostic** · 🏗️ **Legacy systems** · 🌱 **Token-optimized** · 🇫🇷 **Made in France**
+Unify **engineering workflows** around **standardized skills** and **shared best practices**, across modern stacks and **legacy systems**, while reducing **technical debt**.
+
+🧱 **IDE agnostic** · 🏗️ **Legacy systems** · 🌱 **Token-optimized**
 
 <p>
   <!--counts:start--><kbd>8 plugins</kbd> · <kbd>50 skills</kbd> · <kbd>2 agents</kbd><!--counts:end-->
@@ -16,20 +18,17 @@ Unify **engineering teams** around **standardized workflows** and **shared best 
 
 [![Open Source](https://img.shields.io/badge/Open_Source-Yes-yellow?logo=open-source-initiative&logoColor=white)](https://opensource.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
-[![Latest Release](https://img.shields.io/github/v/release/ai-driven-dev/framework?include_prereleases&sort=semver)](https://github.com/ai-driven-dev/framework/releases)
-[![CI](https://github.com/ai-driven-dev/framework/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ai-driven-dev/framework/actions/workflows/ci.yml)
-
-
-<p>🗺️ <a href="https://github.com/orgs/ai-driven-dev/projects/8"><b>Live roadmap</b></a></p>
+[![Latest Release](https://img.shields.io/github/v/release/Jorgo69/jorgo-ai-framework?include_prereleases&sort=semver)](https://github.com/Jorgo69/jorgo-ai-framework/releases)
+[![CI](https://github.com/Jorgo69/jorgo-ai-framework/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Jorgo69/jorgo-ai-framework/actions/workflows/ci.yml)
 
 </div>
 
 ---
 
-The **AI-Driven Dev Framework** installs a working SDLC (Software Development Life Cycle) into your AI coding tool — **skills, agents, commands, rules** — that turns a rough idea into a reviewed, shipped pull request:
+The **Jorgo AI Framework** installs a working SDLC (Software Development Life Cycle) into your AI coding tool — **skills, agents, commands, rules** — that turns a rough idea into a reviewed, shipped pull request:
 
 ```text
-/aidd-orchestrator:01-sdlc "add rate limiting to the /login endpoint"
+/jai-orchestrator:01-sdlc "add rate limiting to the /login endpoint"
 → frame when needed → plan → implement → validate → review → challenge → ship
 ```
 
@@ -57,18 +56,18 @@ Why not just write your own commands? → [FAQ](docs/FAQ.md#-why-aidd-instead-of
 
 ### Claude Code
 
-Installs the 6 stable plugins (`aidd-ui` is 🚧 alpha and `aidd-telemetry` 🧪 beta, install separately — see [Plugins](#-plugins)).
+Installs the 6 stable plugins (`jai-ui` is 🚧 alpha and `jai-telemetry` 🧪 beta, install separately — see [Plugins](#-plugins)).
 
 **In the session** (slash commands)
 
 ```text
-/plugin marketplace add ai-driven-dev/framework
-/plugin install aidd-context@aidd-framework
-/plugin install aidd-refine@aidd-framework
-/plugin install aidd-dev@aidd-framework
-/plugin install aidd-vcs@aidd-framework
-/plugin install aidd-pm@aidd-framework
-/plugin install aidd-orchestrator@aidd-framework
+/plugin marketplace add Jorgo69/jorgo-ai-framework
+/plugin install jai-context@jorgo-ai-framework
+/plugin install jai-refine@jorgo-ai-framework
+/plugin install jai-dev@jorgo-ai-framework
+/plugin install jai-vcs@jorgo-ai-framework
+/plugin install jai-pm@jorgo-ai-framework
+/plugin install jai-orchestrator@jorgo-ai-framework
 ```
 
 
@@ -76,23 +75,23 @@ Installs the 6 stable plugins (`aidd-ui` is 🚧 alpha and `aidd-telemetry` 🧪
 <summary><strong>Command line</strong> (same, prefixed with `claude`)</summary>
 
 ```bash
-claude plugin marketplace add ai-driven-dev/framework
-claude plugin install aidd-context@aidd-framework
-claude plugin install aidd-refine@aidd-framework
-claude plugin install aidd-dev@aidd-framework
-claude plugin install aidd-vcs@aidd-framework
-claude plugin install aidd-pm@aidd-framework
-claude plugin install aidd-orchestrator@aidd-framework
+claude plugin marketplace add Jorgo69/jorgo-ai-framework
+claude plugin install jai-context@jorgo-ai-framework
+claude plugin install jai-refine@jorgo-ai-framework
+claude plugin install jai-dev@jorgo-ai-framework
+claude plugin install jai-vcs@jorgo-ai-framework
+claude plugin install jai-pm@jorgo-ai-framework
+claude plugin install jai-orchestrator@jorgo-ai-framework
 ```
 </details
 
-<br/>Update anytime: `/plugin marketplace update aidd-framework`.
+<br/>Update anytime: `/plugin marketplace update jorgo-ai-framework`.
 
 ### Other tools
 
 Same plugin names as Claude Code.
 
-Download your tool's bundle from the [latest release](https://github.com/ai-driven-dev/framework/releases/latest), then follow its steps:
+Download your tool's bundle from the [latest release](https://github.com/Jorgo69/jorgo-ai-framework/releases/latest), then follow its steps:
 
 > [!NOTE]
 > Installing the framework host-wide for several tools can make the same command appear more than once in a tool's list. This happens when one tool reads another tool's settings, and is harmless.
@@ -106,7 +105,7 @@ Download your tool's bundle from the [latest release](https://github.com/ai-driv
 2. Copy the plugins (Cursor reloads them automatically):
 
 ```bash
-cp -r plugins/aidd-* ~/.cursor/plugins/local/
+cp -r plugins/jai-* ~/.cursor/plugins/local/
 ```
 
 **Flat**
@@ -130,8 +129,8 @@ Disable **Include Third-Party Plugins, Skills, and Other Configs** under **Setti
 2. Run:
 
 ```bash
-copilot plugin marketplace add ./aidd-framework-copilot-marketplace-<version>
-copilot plugin install aidd-context@aidd-framework   # per plugin
+copilot plugin marketplace add ./jorgo-ai-framework-copilot-marketplace-<version>
+copilot plugin install jai-context@jorgo-ai-framework   # per plugin
 ```
 
 **Flat**
@@ -153,8 +152,8 @@ _Also reads Claude format (`.claude/skills/`, `.claude/agents/`)._
 2. Run:
 
 ```bash
-codex plugin marketplace add ./aidd-framework-codex-marketplace-<version>
-codex plugin add aidd-context@aidd-framework   # per plugin
+codex plugin marketplace add ./jorgo-ai-framework-codex-marketplace-<version>
+codex plugin add jai-context@jorgo-ai-framework   # per plugin
 ```
 
 **Flat**
@@ -180,15 +179,15 @@ Three ways in — pick one:
 
 | Start with | Command | When |
 | --- | --- | --- |
-| 🧭 **Guided onboarding** | `/aidd-context:00-onboard` | First time, or unsure what to run — it inspects the project and routes you. |
-| 🧠 **Project memory** | `/aidd-context:02-project-memory` | Build the project memory bank by hand. |
-| ⚙️ **Feature flow** | `/aidd-orchestrator:01-sdlc` | Autonomously ship a feature end to end (frame → deliver → check → PR). |
+| 🧭 **Guided onboarding** | `/jai-context:00-onboard` | First time, or unsure what to run — it inspects the project and routes you. |
+| 🧠 **Project memory** | `/jai-context:02-project-memory` | Build the project memory bank by hand. |
+| ⚙️ **Feature flow** | `/jai-orchestrator:01-sdlc` | Autonomously ship a feature end to end (frame → deliver → check → PR). |
 
 The full loop, and how onboarding sets it up:
 
 ```mermaid
 flowchart TD
-    Onboard(["<b>/aidd-context:00-onboard</b><br/><i>inspect · guide</i>"])
+    Onboard(["<b>/jai-context:00-onboard</b><br/><i>inspect · guide</i>"])
 
     subgraph setup["① Set up — once"]
       Memory["<b>project memory</b><br/><i>durable project context</i>"]
@@ -225,17 +224,17 @@ Start with a functional need or User Story, then track it as an issue or ticket
 before planning. Shipping follows the project's own delivery process. Capture a
 learning only when it is durable enough to improve the next feature.
 
-> 🍳 **More flows** → bundled recipes: [start a project](plugins/aidd-context/skills/12-cook/assets/recipes/start-a-project.md), [ship a feature](plugins/aidd-context/skills/12-cook/assets/recipes/ship-a-feature.md), and more.
+> 🍳 **More flows** → bundled recipes: [start a project](plugins/jai-context/skills/12-cook/assets/recipes/start-a-project.md), [ship a feature](plugins/jai-context/skills/12-cook/assets/recipes/ship-a-feature.md), and more.
 
 ## 🧩 Plugins
 
-Eight plugins covering the whole SDLC — **install all of them**; they work together. (`aidd-ui` is 🚧 **alpha** and `aidd-telemetry` 🧪 **beta** — both off the curated path.)
+Eight plugins covering the whole SDLC — **install all of them**; they work together. (`jai-ui` is 🚧 **alpha** and `jai-telemetry` 🧪 **beta** — both off the curated path.)
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-### 🧭 [aidd-context](plugins/aidd-context/README.md)
+### 🧭 [jai-context](plugins/jai-context/README.md)
 
 `13 skills` · stable
 
@@ -244,7 +243,7 @@ Project init, memory bank, context-artifact generation, diagrams, learning, expl
 </td>
 <td width="33%" valign="top">
 
-### ⚙️ [aidd-dev](plugins/aidd-dev/README.md)
+### ⚙️ [jai-dev](plugins/jai-dev/README.md)
 
 `11 skills` · stable
 
@@ -253,7 +252,7 @@ Code transformation: plan, implement, assert, audit, review, test, refactor, deb
 </td>
 <td width="33%" valign="top">
 
-### 🌿 [aidd-vcs](plugins/aidd-vcs/README.md)
+### 🌿 [jai-vcs](plugins/jai-vcs/README.md)
 
 `5 skills` · stable
 
@@ -264,7 +263,7 @@ Repo init, commits, pull / merge requests, release tags, issues.
 <tr>
 <td width="33%" valign="top">
 
-### 📋 [aidd-pm](plugins/aidd-pm/README.md)
+### 📋 [jai-pm](plugins/jai-pm/README.md)
 
 `10 skills` · stable
 
@@ -273,7 +272,7 @@ Three Amigos refinement, Product Briefs, Epics, User Stories, Tasks, Spikes, Def
 </td>
 <td width="33%" valign="top">
 
-### 🪞 [aidd-refine](plugins/aidd-refine/README.md)
+### 🪞 [jai-refine](plugins/jai-refine/README.md)
 
 `4 skills` · stable
 
@@ -282,7 +281,7 @@ Brainstorm, challenge, shadow-areas, fact-check.
 </td>
 <td width="33%" valign="top">
 
-### 🎼 [aidd-orchestrator](plugins/aidd-orchestrator/README.md)
+### 🎼 [jai-orchestrator](plugins/jai-orchestrator/README.md)
 
 `3 skills` · stable
 
@@ -293,7 +292,7 @@ Synchronous feature flow, async issue-to-PR automation, and product backlog.
 <tr>
 <td width="33%" valign="top">
 
-### 🎨 [aidd-ui](plugins/aidd-ui/README.md) 🚧
+### 🎨 [jai-ui](plugins/jai-ui/README.md) 🚧
 
 `1 skill` · **alpha**
 
@@ -302,7 +301,7 @@ UI / UX design — smoke-test only, not ready for use.
 </td>
 <td width="33%" valign="top">
 
-### 📈 [aidd-telemetry](plugins/aidd-telemetry/README.md) 🧪
+### 📈 [jai-telemetry](plugins/jai-telemetry/README.md) 🧪
 
 `3 skills` · **beta**
 
@@ -319,7 +318,7 @@ Full catalog → [`CATALOG.md`](docs/CATALOG.md).
 
 | | |
 | --- | --- |
-| 🍳 **Recipes** | Bundled how-to sheets: [start a project](plugins/aidd-context/skills/12-cook/assets/recipes/start-a-project.md), [ship a feature](plugins/aidd-context/skills/12-cook/assets/recipes/ship-a-feature.md), [MCP installations](plugins/aidd-context/skills/12-cook/assets/recipes/mcp-installation.md), [token optimization](plugins/aidd-context/skills/12-cook/assets/recipes/token-optimization.md). Project recipes created by cook live in `aidd_docs/recipes/`. |
+| 🍳 **Recipes** | Bundled how-to sheets: [start a project](plugins/jai-context/skills/12-cook/assets/recipes/start-a-project.md), [ship a feature](plugins/jai-context/skills/12-cook/assets/recipes/ship-a-feature.md), [MCP installations](plugins/jai-context/skills/12-cook/assets/recipes/mcp-installation.md), [token optimization](plugins/jai-context/skills/12-cook/assets/recipes/token-optimization.md). Project recipes created by cook live in `aidd_docs/recipes/`. |
 | 🏛️ **[Architecture](docs/ARCHITECTURE.md)** | How the framework composes: plugins, skills, hooks, agents. |
 | 🧩 **[Create a plugin](docs/CREATE_PLUGIN.md)** | Build and publish your own. |
 | 🛒 **[Marketplace](docs/MARKETPLACE.md)** | Install scopes, versioning, LLM tiers. |
@@ -331,9 +330,9 @@ Plugins act with **your permissions**, and some run **Node hooks automatically**
 
 Before installing any plugin, skim its `README`, `hooks/`, and `.mcp.json`. Found a vulnerability? Report it privately → [`SECURITY.md`](SECURITY.md).
 
-## 🧑‍💻 The AI-Driven Dev
+## 🧑‍💻 Credit: the AI-Driven Dev community
 
-Built by the [AI-Driven Dev](https://www.ai-driven-dev.fr/) community: 3 years of R&D, 500+ developers trained in English 🇬🇧 and French 🇫🇷, shipping production software with 100% AI-generated code.
+This project is a personal fork of the framework built by the [AI-Driven Dev](https://www.ai-driven-dev.fr/) community: 3 years of R&D, 500+ developers trained in English 🇬🇧 and French 🇫🇷, shipping production software with 100% AI-generated code. All credit for the original design goes to them — this fork adapts it to a personal workflow.
 
 - **[Join the Discord 🇫🇷](https://discord.gg/EWySJSpjWs)** — public [roadmap](ROADMAP.md) decisions every Thursday morning.
 - **Want to train your team?** [See the programme](https://www.ai-driven-dev.fr/entreprise).
@@ -341,19 +340,19 @@ Built by the [AI-Driven Dev](https://www.ai-driven-dev.fr/) community: 3 years o
 
 ## 🤝 Contributing
 
-Free and open-source (MIT). If it saves you time, [a ⭐](https://github.com/ai-driven-dev/framework/stargazers) helps others find it.
+Free and open-source (MIT). If it saves you time, [a ⭐](https://github.com/Jorgo69/jorgo-ai-framework/stargazers) helps others find it.
 
-- **Idea or bug?** [Open an issue](https://github.com/ai-driven-dev/framework/issues) or [start a discussion](https://github.com/ai-driven-dev/framework/discussions).
+- **Idea or bug?** [Open an issue](https://github.com/Jorgo69/jorgo-ai-framework/issues) or [start a discussion](https://github.com/Jorgo69/jorgo-ai-framework/discussions).
 - **Contribute code** → [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-[![Contributors](https://contrib.rocks/image?repo=ai-driven-dev/framework)](https://github.com/ai-driven-dev/framework/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Jorgo69/jorgo-ai-framework)](https://github.com/Jorgo69/jorgo-ai-framework/graphs/contributors)
 
 ---
 
 <div align="center">
 
-<a href="https://github.com/ai-driven-dev/framework/stargazers"><img src="https://raw.githubusercontent.com/ai-driven-dev/framework/star-history/star-history.svg" alt="Star History Chart" width="500" /></a>
+<a href="https://github.com/Jorgo69/jorgo-ai-framework/stargazers"><img src="https://raw.githubusercontent.com/Jorgo69/jorgo-ai-framework/star-history/star-history.svg" alt="Star History Chart" width="500" /></a>
 
-Made with care in France 🇫🇷 · ← [AIDD organisation](https://github.com/ai-driven-dev)
+Maintained by [Jorgo69](https://github.com/Jorgo69) · Forked from [ai-driven-dev/framework](https://github.com/ai-driven-dev)
 
 </div>
