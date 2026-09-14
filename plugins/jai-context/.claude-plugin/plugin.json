@@ -4,8 +4,8 @@
   "version": "2.8.0",
   "description": "Knowledge production: project bootstrap, project init, generation of context artifacts (skills, agents, rules, commands, hooks), mermaid diagrams, learn, explore, recipe how-to sheets",
   "author": {
-    "name": "AI-Driven Dev",
-    "url": "https://github.com/ai-driven-dev"
+    "name": "Jorgo69",
+    "url": "https://github.com/Jorgo69"
   },
   "skills": [
     "./skills/00-onboard",
@@ -30,7 +30,7 @@
     "mermaid",
     "onboard"
   ],
-  "repository": "https://github.com/ai-driven-dev/framework",
-  "homepage": "https://ai-driven.dev",
+  "repository": "https://github.com/Jorgo69/jorgo-ai-framework",
+  "homepage": "https://github.com/Jorgo69/jorgo-ai-framework",
   "license": "MIT"
 }

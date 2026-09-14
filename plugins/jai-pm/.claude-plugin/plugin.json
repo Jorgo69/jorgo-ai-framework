@@ -4,8 +4,8 @@
   "version": "2.5.0",
   "description": "Product backlog artifacts, refinement, Product Briefs, Epics, User Stories, Tasks, Spikes, Defects, requirements, and specs.",
   "author": {
-    "name": "AI-Driven Dev",
-    "url": "https://github.com/ai-driven-dev"
+    "name": "Jorgo69",
+    "url": "https://github.com/Jorgo69"
   },
   "skills": [
     "./skills/01-ticket-info",
@@ -33,7 +33,7 @@
     "defects",
     "tickets"
   ],
-  "repository": "https://github.com/ai-driven-dev/framework",
-  "homepage": "https://ai-driven.dev",
+  "repository": "https://github.com/Jorgo69/jorgo-ai-framework",
+  "homepage": "https://github.com/Jorgo69/jorgo-ai-framework",
   "license": "MIT"
 }

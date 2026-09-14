@@ -4,8 +4,8 @@
   "version": "2.3.0",
   "description": "Orchestrates the synchronous SDLC pipeline, async issue-to-PR automation, and the product backlog.",
   "author": {
-    "name": "AI-Driven Dev",
-    "url": "https://github.com/ai-driven-dev"
+    "name": "Jorgo69",
+    "url": "https://github.com/Jorgo69"
   },
   "skills": [
     "./skills/00-async-dev",
@@ -21,7 +21,7 @@
     "automation",
     "backlog"
   ],
-  "repository": "https://github.com/ai-driven-dev/framework",
-  "homepage": "https://ai-driven.dev",
+  "repository": "https://github.com/Jorgo69/jorgo-ai-framework",
+  "homepage": "https://github.com/Jorgo69/jorgo-ai-framework",
   "license": "MIT"
 }

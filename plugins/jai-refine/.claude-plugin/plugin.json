@@ -4,8 +4,8 @@
   "version": "3.0.1",
   "description": "Meta-cognition: refine input through brainstorming, refine output through challenge, blind-spot scanning, and fact-checking.",
   "author": {
-    "name": "AI-Driven Dev",
-    "url": "https://github.com/ai-driven-dev"
+    "name": "Jorgo69",
+    "url": "https://github.com/Jorgo69"
   },
   "skills": [
     "./skills/01-brainstorm",
@@ -20,7 +20,7 @@
     "meta-cognition",
     "refinement"
   ],
-  "repository": "https://github.com/ai-driven-dev/framework",
-  "homepage": "https://ai-driven.dev",
+  "repository": "https://github.com/Jorgo69/jorgo-ai-framework",
+  "homepage": "https://github.com/Jorgo69/jorgo-ai-framework",
   "license": "MIT"
 }

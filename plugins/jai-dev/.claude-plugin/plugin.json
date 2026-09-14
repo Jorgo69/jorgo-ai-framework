@@ -4,8 +4,8 @@
   "version": "2.5.0",
   "description": "Code transformation: plan, implement, assert, audit, review, test, refactor, debug, for-sure, plus short standalone Browser QA evidence. Hosts engineering agents.",
   "author": {
-    "name": "AI-Driven Dev",
-    "url": "https://github.com/ai-driven-dev"
+    "name": "Jorgo69",
+    "url": "https://github.com/Jorgo69"
   },
   "skills": [
     "./skills/01-plan",
@@ -32,7 +32,7 @@
     "refactor",
     "debug"
   ],
-  "repository": "https://github.com/ai-driven-dev/framework",
-  "homepage": "https://ai-driven.dev",
+  "repository": "https://github.com/Jorgo69/jorgo-ai-framework",
+  "homepage": "https://github.com/Jorgo69/jorgo-ai-framework",
   "license": "MIT"
 }

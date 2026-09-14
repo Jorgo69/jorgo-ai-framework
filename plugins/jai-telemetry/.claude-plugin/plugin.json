@@ -4,8 +4,8 @@
   "version": "0.2.0",
   "description": "Measurement. The hooks journal which skill served which task, on plain node with nothing installed; three skills reach the `aidd` CLI to turn it on, answer what a period or a task consumed, and check it is recording. Off unless you turn it on, and it computes no amount.",
   "author": {
-    "name": "AI-Driven Dev",
-    "url": "https://github.com/ai-driven-dev"
+    "name": "Jorgo69",
+    "url": "https://github.com/Jorgo69"
   },
   "keywords": [
     "telemetry",
@@ -13,7 +13,7 @@
     "journal",
     "hooks"
   ],
-  "repository": "https://github.com/ai-driven-dev/framework",
-  "homepage": "https://ai-driven.dev",
+  "repository": "https://github.com/Jorgo69/jorgo-ai-framework",
+  "homepage": "https://github.com/Jorgo69/jorgo-ai-framework",
   "license": "MIT"
 }
