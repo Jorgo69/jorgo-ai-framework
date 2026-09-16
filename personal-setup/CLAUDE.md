@@ -39,6 +39,8 @@ En début de session, lire dans cet ordre et s'arrêter dès que le contexte est
 Ne jamais re-scanner tout le code source si ces fichiers existent.
 Faire des lectures ciblées (fichier précis, ligne précise) plutôt que des explorations larges.
 
+**Coexistence avec `aidd_docs/memory/`** (si tu utilises le plugin `jai-context` de ce fork) : ces 5 fichiers restent la couche rapide lue en premier, dans l'ordre ci-dessus. `aidd_docs/memory/` (structure par capacité : `architecture.md`, `testing.md`, `vcs.md`, `auth.md`, etc.) est une couche secondaire, plus détaillée, consultée à la demande pour un sujet précis — jamais lue en bloc au démarrage. Pas de duplication à maintenir : chaque fichier garde son rôle.
+
 ## Architecture préférée (à détecter, pas à imposer)
 
 Exemple d'organisation qu'on peut préférer :

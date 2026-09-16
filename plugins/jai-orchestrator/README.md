@@ -2,7 +2,7 @@
 
 # jai-orchestrator
 
-Orchestration plugin for the AI-Driven Development framework.
+Orchestration plugin for jorgo-ai-framework.
 
 > Status: stable for synchronous SDLC, `async-dev`, and backlog orchestration.
 

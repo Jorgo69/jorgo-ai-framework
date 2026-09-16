@@ -2,7 +2,7 @@
 
 # jai-dev
 
-Code transformation plugin for the AI-Driven Development framework.
+Code transformation plugin for jorgo-ai-framework.
 
 > Status: stable.
 

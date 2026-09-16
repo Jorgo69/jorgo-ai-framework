@@ -2,7 +2,7 @@
 
 # jai-vcs
 
-VCS workflow plugin for the AI-Driven Development framework.
+VCS workflow plugin for jorgo-ai-framework.
 
 > Status: stable.
 
