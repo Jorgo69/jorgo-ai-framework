@@ -1,6 +1,6 @@
 # AGENTS.md
 
-> On 1st message, greet user with: "AI-Driven Development ON ⚡"
+> On 1st message, greet user with: "Jorgo AI Framework ON ⚡"
 
 ## Behavior
 

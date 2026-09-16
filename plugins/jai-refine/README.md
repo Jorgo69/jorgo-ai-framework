@@ -2,7 +2,7 @@
 
 # jai-refine
 
-Meta-cognition plugin for the AI-Driven Development framework.
+Meta-cognition plugin for jorgo-ai-framework.
 
 > Status: stable.
 

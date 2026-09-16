@@ -2,7 +2,7 @@
 
 # jai-context
 
-Knowledge production plugin for the AI-Driven Development framework.
+Knowledge production plugin for jorgo-ai-framework.
 
 > Status: stable.
 

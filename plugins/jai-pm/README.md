@@ -2,7 +2,7 @@
 
 # jai-pm
 
-Product management plugin for the AI-Driven Development framework.
+Product management plugin for jorgo-ai-framework.
 
 > Status: stable.
 
