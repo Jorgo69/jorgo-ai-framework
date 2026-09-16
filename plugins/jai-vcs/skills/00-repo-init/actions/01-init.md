@@ -18,12 +18,14 @@ A report of the repo root, the resolved default branch and provider, and whether
 2. **Resolve.** Resolve the default branch and provider; an explicit `default_branch` wins.
 3. **Init.** Run `git init -b <default_branch> <cwd>`.
 4. **Contribute.** Write `CONTRIBUTING.md` at the repo root from the template [CONTRIBUTING.md](../assets/CONTRIBUTING.md), filling `{{PROJECT_NAME}}`. Leave no raw `{{...}}`.
-5. **Bootstrap.** Commit once so `HEAD` exists and is pushable: `git -C <cwd> commit --allow-empty -m "chore: initialize repository"`.
-6. **Remote.** If `remote_url` is given, run `git -C <cwd> remote add origin <remote_url>`.
+5. **Confirm.** Show the exact command from the next step and ask the user to approve it. Never run it without a yes, even though it is empty and reversible.
+6. **Bootstrap.** On approval, commit once so `HEAD` exists and is pushable: `git -C <cwd> commit --allow-empty -m "chore: initialize repository"`. On refusal, stop and report `created: true` with no commit; the repo stays initialized but without a bootstrap commit.
+7. **Remote.** If `remote_url` is given, run `git -C <cwd> remote add origin <remote_url>`.
 
 ## Test
 
 - `git -C <cwd> rev-parse --is-inside-work-tree` prints `true`.
 - `git -C <cwd> symbolic-ref --short HEAD` equals the resolved default branch.
 - `CONTRIBUTING.md` exists at the repo root and contains no `{{`.
-- `git -C <cwd> rev-parse HEAD` resolves to a commit.
+- The bootstrap commit never runs without a prior explicit approval.
+- On approval, `git -C <cwd> rev-parse HEAD` resolves to a commit.

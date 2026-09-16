@@ -23,7 +23,7 @@ Before running an action, read its file in `actions/`, not only the table or ass
 ## Transversal rules
 
 - The local step is idempotent. If the target is already a git work tree, `init` does nothing and reports.
-- `init` makes one bootstrap commit (`--allow-empty`) so `HEAD` exists and is pushable. The project's real first commit stays the commit skill's job.
+- `init` asks approval, then makes one bootstrap commit (`--allow-empty`) so `HEAD` exists and is pushable — even empty, no commit runs without an explicit yes. The project's real first commit stays the commit skill's job.
 - `publish` is outward-facing. It confirms before creating the remote unless `non_interactive` is set.
 - The provider is open. Resolve the host and how to reach it (CLI, MCP, or API) from the VCS memory when present, else from the VCS tooling available in the environment. Never restrict to a fixed list or a fixed mechanism. `main` is the default-branch fallback.
 
