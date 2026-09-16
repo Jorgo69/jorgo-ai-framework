@@ -1,62 +1,44 @@
-# Contributing to the AIDD Framework
+# Contributing to jorgo-ai-framework
 
-## 👥 How to contribute
+This is a personal fork, maintained solo by [Jorgo69](https://github.com/Jorgo69). No issue-triage team, no "Certified Member" roles, no separate `next` branch — one branch (`main`), protected, changed only through pull requests.
 
-One path, open to everyone ([roles](./GOVERNANCE.md#-roles)). 
+## 🔀 The only path: branch → PR → merge
 
-```mermaid
-flowchart LR
-    Start(["Something to share?"]) -->|"just a question"| Discussion["💬 Discussions"]
-    Start --> Bug["🐛 Bug"]
-    Start --> Quick["🌱 Quick<br/>problem + solution"]
-    Start --> Detailed["📋 Detailed<br/>scope + acceptance criteria"]
-    Bug --> Validate["✅ Get validated"]
-    Quick --> Validate
-    Detailed --> Validate
-    Validate --> Setup["🔧 Set up"] --> Changes["✏️ Changes"] --> PR["🔀 Open PR"] --> Review["🛡️ Review"] --> Merge["✅ Merged"]
+`main` is protected on GitHub: **no direct push, not even for the owner**. Every change, including a one-line fix, goes through this flow:
+
+```bash
+# 1. Branch off main
+git checkout main && git pull
+git checkout -b fix/short-description     # or feat/, docs/, chore/...
+
+# 2. Work, commit normally
+git add <files>
+git commit -m "<type>(<scope>): description"   # Conventional Commits
+
+# 3. Push the branch (never main directly — GitHub will refuse it anyway)
+git push -u origin fix/short-description
+
+# 4. Open the PR
+gh pr create --fill
+
+# 5. Merge it yourself once you're satisfied — no external approval is required
+#    (branch protection only requires a PR to exist, not a review from someone else)
+gh pr merge --squash
 ```
 
-1. Just a question? → [Discussions](https://github.com/ai-driven-dev/framework/discussions).
-2. **Open an issue** — [🐛 Bug Report](https://github.com/ai-driven-dev/framework/issues/new?template=bug_report.yml), [🌱 Quick Contribution](https://github.com/ai-driven-dev/framework/issues/new?template=quick_contribution.yml), or [📋 Detailed Contribution](https://github.com/ai-driven-dev/framework/issues/new?template=detailed_contribution.yml).
-3. **Get it validated** — a Certified Member or Maintainer moves it to `Todo`. Green light.
-4. **Want to build it yourself?** → [Set up](#-set-up). Anyone can pick up a validated issue, not just the person who opened it.
-5. **Open your PR** → [Open a pull request](#-open-a-pull-request).
+`--squash` keeps `main`'s history at one commit per PR. Use `--merge` instead if you want every commit preserved.
 
 ## 📜 Principles
 
-What holds for every contribution, whatever you're building:
-
 - **No slop** — read every line before proposing it.
 - **Spend tokens like they cost something.**
-- **Claude Code syntax only** — skills, agents, and rules are authored in Claude Code syntax (the [CLI](./cli/) adapts a per-tool archive at release).
-- **Follow the skill structure** → [`ARCHITECTURE.md`](docs/ARCHITECTURE.md), use the `/jai-context:04-skill-generate`.
-- **Evolve the memory** → [`aidd_docs/memory/`](aidd_docs/memory/).
-
-## 🔧 Set up
-
-Requires **Node 22.12+**, **pnpm**, **jq**, **python3**, **pipx**.
-
-```bash
-make setup   # deps, git hooks, registers the marketplace, installs plugins into Claude + Codex
-```
-
-`make` lists every target; `make doctor` checks your environment, `make check` runs the pre-commit checks.
-
-## ✏️ Make your change
-
-- **Follow the [Principles](#-principles).**
-- **Test locally** — run `make reload`, restart your session(s). Test in Claude *and* one other tool (e.g. Codex).
-- **Commit** — `<type>(<scope>): description`, one scope per commit → [convention](aidd_docs/memory/vcs.md#commits).
-
-## 🔀 Open a pull request
-
-- **Branch off `next`, target `next`** → [routing table](aidd_docs/memory/vcs.md#branches).
-- **Fill the [PR template](.github/PULL_REQUEST_TEMPLATE.md)** — what changed, how you solved it.
-- **A Maintainer review gates every merge** → [`GOVERNANCE.md`](./GOVERNANCE.md#-code-decisions).
+- **Claude Code syntax only** — skills, agents, and rules are authored in Claude Code syntax.
+- **Follow the skill structure** → [`ARCHITECTURE.md`](docs/ARCHITECTURE.md), use `/jai-context:04-skill-generate` to scaffold a new one.
+- **One concern per commit** — Conventional Commits format, imperative mood.
 
 ## 📚 Reference
 
-[`ARCHITECTURE.md`](docs/ARCHITECTURE.md) · [`CREATE_PLUGIN.md`](docs/CREATE_PLUGIN.md) · [`GLOSSARY.md`](docs/GLOSSARY.md)
+[`ARCHITECTURE.md`](docs/ARCHITECTURE.md) · [`CREATE_PLUGIN.md`](docs/CREATE_PLUGIN.md) · [`GLOSSARY.md`](docs/GLOSSARY.md) · [`COMMANDS.md`](COMMANDS.md) — quick reference for every `jai-*` skill.
 
 ---
 
