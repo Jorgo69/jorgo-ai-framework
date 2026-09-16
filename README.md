@@ -351,8 +351,6 @@ Free and open-source (MIT). If it saves you time, [a ⭐](https://github.com/Jor
 
 <div align="center">
 
-<a href="https://github.com/Jorgo69/jorgo-ai-framework/stargazers"><img src="https://raw.githubusercontent.com/Jorgo69/jorgo-ai-framework/star-history/star-history.svg" alt="Star History Chart" width="500" /></a>
-
 Maintained by [Jorgo69](https://github.com/Jorgo69) · Forked from [ai-driven-dev/framework](https://github.com/ai-driven-dev)
 
 </div>
