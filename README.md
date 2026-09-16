@@ -321,6 +321,8 @@ Full catalog → [`CATALOG.md`](docs/CATALOG.md).
 | 🧩 **[Create a plugin](docs/CREATE_PLUGIN.md)** | Build and publish your own. |
 | 🛒 **[Marketplace](docs/MARKETPLACE.md)** | Install scopes, versioning, LLM tiers. |
 | ❓ **[FAQ & Troubleshooting](docs/FAQ.md)** · **[Glossary](docs/GLOSSARY.md)** | Common questions, fixes, and terms. |
+| 📖 **[Command reference](COMMANDS.md)** | Every `jai-*` skill, what it does, and when to use it — one page. |
+| 🛠️ **[Personal setup](personal-setup/)** | My general Claude Code config beyond this marketplace: house rules, `reviewer`/`testeur`/`architecte` sub-agents, and RTK — independent of the plugins above, take what's useful. |
 
 ## 🔒 Trust and safety
 
