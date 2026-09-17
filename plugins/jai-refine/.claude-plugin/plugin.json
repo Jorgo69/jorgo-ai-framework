@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "jai-refine",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Meta-cognition: refine input through brainstorming, refine output through challenge, blind-spot scanning, and fact-checking.",
   "author": {
     "name": "Jorgo69",

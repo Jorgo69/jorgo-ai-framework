@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "jai-vcs",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "External artifacts: repo-init, commit, pull-request, release-tag, issue-create",
   "author": {
     "name": "Jorgo69",
