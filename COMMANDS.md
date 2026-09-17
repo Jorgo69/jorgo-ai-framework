@@ -107,6 +107,20 @@ Pipeline typique : `plan` → `implement` → `assert` → `review`/`test` → (
 
 ---
 
+## devlog — journal de développement (plugin invité)
+
+Pas un `jai-*` — plugin distinct d'un collègue (Ibra, 41Devs), inclus avec son autorisation. Voir [`plugins/devlog/README.md`](plugins/devlog/README.md).
+
+| Commande | Rôle | Quand l'utiliser |
+|---|---|---|
+| `devlog` (automatique) | Journalise en continu les changements significatifs | Toujours actif, pas d'invocation manuelle nécessaire |
+| `/log` | Force une entrée manuelle dans le journal | Changement que tu veux documenter explicitement |
+| `/journal-index` | Régénère la table des matières du journal | Après un signal du hook, ou à la demande |
+| `/rapport` | Génère un rapport journalier complet | Fin de journée, partage d'avancement |
+| `/todo` | Liste les tâches en attente issues du journal | Reprise de contexte |
+
+---
+
 ## Non installés (à la demande seulement)
 
 - `jai-ui` — alpha, un seul skill smoke-test, pas encore de vraies capacités UI/UX.

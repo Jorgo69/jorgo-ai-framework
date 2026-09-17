@@ -78,6 +78,15 @@
       "metadata": {
         "recommended": false
       }
+    },
+    {
+      "name": "devlog",
+      "source": "./plugins/devlog",
+      "description": "Automatic dev journal: logs features/bugs/refactors to Markdown with a noise threshold and an auto-regenerated index. Originally by Ibra (41Devs), included here with his permission.",
+      "strict": true,
+      "metadata": {
+        "recommended": false
+      }
     }
   ]
 }

@@ -226,7 +226,7 @@ learning only when it is durable enough to improve the next feature.
 
 ## 🧩 Plugins
 
-Eight plugins covering the whole SDLC — **install all of them**; they work together. (`jai-ui` is 🚧 **alpha** and `jai-telemetry` 🧪 **beta** — both off the curated path.)
+Eight `jai-*` plugins covering the whole SDLC — **install all of them**; they work together. (`jai-ui` is 🚧 **alpha** and `jai-telemetry` 🧪 **beta** — both off the curated path.) Plus one guest: [`devlog`](plugins/devlog/README.md), a standalone dev-journal plugin from a colleague, bundled here with permission.
 
 <table>
 <tr>
@@ -306,7 +306,15 @@ UI / UX design — smoke-test only, not ready for use.
 Answers what a piece of work cost — tokens, models, and which skill spent them. The switch is git-tracked, so it applies to everyone who clones; opt out per person with `AIDD_TELEMETRY=0`. Nothing leaves your machine.
 
 </td>
-<td width="33%" valign="top"></td>
+<td width="33%" valign="top">
+
+### 📓 [devlog](plugins/devlog/README.md)
+
+`1 skill + 4 commands` · guest plugin
+
+Automatic dev journal with a noise threshold and auto-regenerated index. Not one of the `jai-*` family — originally by Ibra (41Devs), included with permission.
+
+</td>
 </tr>
 </table>
 
